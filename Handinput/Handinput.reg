@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInput]
+@="URL:HANDINPUT Protocol"
+"URL Protocol"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInput\DefaultIcon]
+@="D:\\Handinput\\handinput.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInput\shell]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInput\shell\open]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInput\shell\open\command]
+@="D:\\Handinput\\handinput.exe"
