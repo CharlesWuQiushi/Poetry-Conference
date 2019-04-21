@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInputOver]
+@="URL:HANDINPUTOVER Protocol"
+"URL Protocol"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInputOver\DefaultIcon]
+@="D:\\Handinput\\handinput.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInputOver\shell]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInputOver\shell\open]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\HandInputOver\shell\open\command]
+@="taskkill /f /im handinput.exe"
