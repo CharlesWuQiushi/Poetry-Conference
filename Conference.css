@@ -1,0 +1,257 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "";
+    background: url("./Images/BG2.jpg") no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    transition: all 0.5s ease-out;
+    font-family: "华文新魏_GBK";
+}
+
+#bg-img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+main {
+    padding: 100px 200px;
+    transition: all 0.5s ease-out;
+}
+
+main * {
+    z-index: 10;
+    position: absolute;
+    font-family: "华文新魏_GBK"
+}
+
+#entry-title {
+    font-size: 132px;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 380px;
+    z-index: 10;
+}
+
+.small-note {
+    font-size: 38px;
+}
+
+.big-note {
+    font-size: 72px;
+}
+
+ul li {
+    width: 600px;
+    font-weight: bold;
+}
+
+button {
+    border: 3px #000000 solid;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 10px 16px;
+    transition: all 0.5s ease;
+    outline: none;
+    font-family: "华文新魏_GBK";
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#next-step {
+    font-size: 60px;
+    position: absolute;
+    right: 160px;
+    bottom: 80px;
+}
+
+.num-display {
+    position: absolute;
+    top: 100px;
+    left: 340px;
+    font-size: 56px;
+}
+
+.name-display {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    font-size: 180px;
+    width: 800px;
+    font-family: "华文新魏_GBK";
+}
+
+.ques-blank-intro {
+    font-size: 38px;
+    margin-top: 62px;
+    max-width: 960px;
+    line-height: 46px;
+}
+
+#ques-blank-wrap {
+    margin-top: 110px;
+    border: 2px solid black;
+    padding: 3px;
+    width: 496px;
+}
+
+.blank-choose {
+    width: 120px;
+    padding: 0;
+    height: 120px;
+    margin: 2px;
+    border-radius: 0;
+    border: 2px solid dimgray;
+    position: unset;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+    font-size: 80px;
+}
+
+#ques-blank-answer {
+    height: 76px;
+    border: 2px black solid;
+    padding: 10px;
+    font-size: 68px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.75);
+    top: 240px;
+    right: 30px;
+    width: 500px;
+}
+
+#ques-blank-backspace, #ques-false-check {
+    height: 86px;
+    width: 120px;
+    color: red;
+    border-radius: 8px;
+    border: 2px solid grey;
+    font-weight: bold;
+    font-size: 38px;
+    position: absolute;
+    right: 40px;
+    top: 360px;
+}
+
+#answer-true {
+    width: 300px;
+    position: absolute;
+    right: 60px;
+    top: 80px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 20;
+}
+
+#score-plus {
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 2px;
+    left: 398px;
+    opacity: 0;
+}
+
+#time-left {
+    position: absolute;
+    right: 130px;
+    top: 20px;
+    font-size: 60px;
+    color: red;
+    font-weight: bold;
+    z-index: 30;
+}
+
+#time-left-intro {
+    position: absolute;
+    right: 260px;
+    top: 40px;
+    font-size: 45px;
+}
+
+.red-score {
+    color: red;
+    position: unset;
+}
+
+.ques-choose-option {
+    width: 210px;
+    position: unset;
+    margin-top: 170px;
+    height: 240px;
+    border: 3px grey solid;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 46px;
+    padding: 8px;
+}
+
+.ques-choose-option-checked {
+    border: 3px #00ca11 solid;
+    background: rgba(0, 255, 64, 0.3);
+}
+
+.ques-choose-right {
+    border: 3px #ff0000 solid;
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.ques-space-wrap {
+    font-size: 60px;
+    position: none;
+    margin-top: 100px;
+    margin-left: -80px;
+    line-height: 76px;
+}
+
+.ques-space-text {
+    position: unset;
+    margin: 4px 18px;
+    border: 2px grey solid;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 50px;
+    padding: 10px 18px;
+    width: 480px;
+    outline: none;
+}
+
+.ques-space-text:focus {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#ques-from {
+    left: 40px;
+    bottom: 2px;
+    font-size: 42px;
+    color: black;
+    opacity: 0;
+    max-width: 520px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 26px;
+}
+
+a {
+    font-size: 44px;
+    position: unset;
+    text-decoration: 1px;
+}
+
+.source-link {
+    color: #00439b;
+}

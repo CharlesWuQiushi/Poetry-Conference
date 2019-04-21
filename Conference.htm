@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>2019-成外附小诗词大会</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>/* 设置题目类型、选择题选项变量 */const blank = 0, space = 1, choose = 2, pictrue = 3, A = "A", B = "B", C = "C", D = "D";</script>
+	<!-- 导入题库JS文件 -->
+	<script type="text/javascript" src="./Poetry Database/Competitor.js"></script>
+	<script type="text/javascript" src="./Poetry Database/L1.js"></script>
+	<script type="text/javascript" src="./Poetry Database/L2.js"></script>
+	<script type="text/javascript" src="./Poetry Database/L3.js"></script>
+	<!-- 导入CSS样式表文件 -->
+	<link type="text/css" rel="stylesheet" href="./Conference.css" />
+</head>
+
+<body id="body" onbeforeunload="CAUTION()" onblur="self.focus();">
+	<main id="stage">
+		<span class="small-note" style="margin-top:30px;">2019 成外附小六年级</span>
+		<h1 id="entry-title">诗词大会</h1>
+		<span class="small-note" style="margin-top:240px;margin-left:460px">六 · 14班 班级复赛</span>
+		<span style="font-size:60px;margin-top:320px;margin-left:260px;" id="get-in">点击以进入程序</span>
+	</main>
+	<!-- 记录背景音乐及音效 -->
+	<audio src="./Audios/Waiting.mp3" id="waitingBGM" autoplay="true" loop="true"></audio>
+	<audio src="./Audios/Loaded.mp3" id="loadBGM"></audio>
+	<audio src="./Audios/Loading.mp3" id="loadendBGM"></audio>
+	<audio src="./Audios/Answering0.mp3" id="answerBGM"></audio>
+	<audio src="./Audios/Victory.mp3" id="victoryBGM"></audio>
+	<audio src="./Audios/Total.mp3" id="totalBGM"></audio>
+
+	<!-- 总集成调用程序 -->
+	<script type="text/javascript" src='./Conference.js'></script>
+</body>
+
+</html>
